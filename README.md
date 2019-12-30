@@ -4,4 +4,5 @@ If you have any suggestions to improve these conventions please open a new issue
 ## Naming
 The naming convention is similar to Microsoft gneral naming conventions found [here](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/general-naming-conventions).
 ## Versioning
-The versioning convention is adapted form of Semantic Versioning 2.0.0 found [here](https://semver.org/).
+The versioning convention is adapted form of Semantic Versioning 2.0.0 found [here](https://semver.org/).  
+Specifications can be found here: https://github.com/Autarkysoft/Convention/blob/master/Versioning.md
