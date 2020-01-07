@@ -45,6 +45,7 @@ if(b)
 explaining what the member does and have any additional information that could help the caller. For example exceptions that could be 
 thrown by the method. More information about xml documentation can be found 
 [here](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/)
+* Use `<inheritdoc cref="Foo"/>` where `Foo` is the reference that the doc can be inheritted from to avoid re-writing the same comment.
 * It is preferred that the code also contains comments specially for complex algorithms and in cases where readability might have been
 scarificed for performance gain.
 * Comments are best be placed in a separate line.
