@@ -1,4 +1,4 @@
-# Convention
+# Conventions
 In order to keep consistency and increase readability and ease of use, a set of guidelines are provided here for different conventions used in different projects.  
 If you have any suggestions to improve these conventions please open a new issue in this repository and if you encountered any inconsistency in any of the projects that use these conventions please open a new issue in the respective repositoy. 
 ## C# Coding Convention
