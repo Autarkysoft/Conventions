@@ -25,6 +25,7 @@ if(b)
 * Using parentheses in expressions (to group clauses) or in mathematical formulas 
 (to indicate which operation should happen first) is preferred.
 * Avoid spurious free spaces. For example avoid `if (someVar == 0)...`, where the dots mark the spurious free spaces.
+* Use only one statement or one declaration per line.
 
 ## Spacing and code placing
 * It is best if each member of a namespace is placed in a separate file with the same name as the member. 
@@ -88,8 +89,6 @@ var foo = GetSomething();
 var foo = GetString();
 ```
 * Use object initializers to simplify object creation. `var employee = new Employee() { Name = "John Doe" };`
-
-
-
-
-** Under construction **
+* Use language keywords instead of BCL types (e.g. `int`, `string`, `float` instead of `Int32`, `String`, `Single`, etc)
+* Exceptions can be thrown by any method that is not supposed to be used in a hotpath, such as constructors. Use appropriate types.
+* Methods that are named `Try*()` should never throw any exceptions. Instead they return a `boolean` indicating success and any returned value using `out` keyword.
