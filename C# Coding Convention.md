@@ -26,6 +26,7 @@ if(b)
 (to indicate which operation should happen first) is preferred.
 * Avoid spurious free spaces. For example avoid `if (someVar == 0)...`, where the dots mark the spurious free spaces.
 * Use only one statement or one declaration per line.
+* Avoid using `#region` directive
 
 ## Spacing and code placing
 * It is best if each member of a namespace is placed in a separate file with the same name as the member. 
