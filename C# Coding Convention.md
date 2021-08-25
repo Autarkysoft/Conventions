@@ -93,3 +93,4 @@ var foo = GetString();
 * Use language keywords instead of BCL types (e.g. `int`, `string`, `float` instead of `Int32`, `String`, `Single`, etc)
 * Exceptions can be thrown by any method that is not supposed to be used in a hotpath, such as constructors. Use appropriate types.
 * Methods that are named `Try*()` should never throw any exceptions. Instead they return a `boolean` indicating success and any returned value using `out` keyword.
+* Avoid using partial classes
