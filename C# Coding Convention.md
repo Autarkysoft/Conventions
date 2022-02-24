@@ -10,7 +10,7 @@ The general rule is usually to follow "Visual Studio defaults".
 * Each line of code should contain about 100 characters and in case of overflow the rest should be on the new line 
 with appropriate indentation.
 * Use [Allman style](https://en.wikipedia.org/wiki/Indentation_style#Allman_style) braces (each brace begins on a new line)
-* Braces could be removed for a single short line statement block but with proper indenting on its. If the block doesn't fit in
+* Braces could be removed for a single short line statement block but with proper indenting. If the block doesn't fit in
 one line it still requires braces.
 ```csharp
 if(b)
@@ -79,18 +79,20 @@ public abstract class Foo {}
 string foo;
 abstract public class Foo {}
 ```
-* Usage of `var` is avoided except for instantiation.
+* Avoid using `var` keyword.
 ```csharp
-// OK to use var
+// Preferred way for better readability (feature introduced in C# 9.0)
+Foo foo = new();
+// Using var like this is discouraged
 var foo = new Foo();
-// Avoid using var
+// Avoid using var in these cases
 var foo = "some string";
 var foo = GetSomething();
 // Avoid even when the type looks obvious
 var foo = GetString();
 ```
-* Use object initializers to simplify object creation. `var employee = new Employee() { Name = "John Doe" };`
+* Use object initializers to simplify object creation. `Employee employee = new() { Name = "John Doe" };`
 * Use language keywords instead of BCL types (e.g. `int`, `string`, `float` instead of `Int32`, `String`, `Single`, etc)
-* Exceptions can be thrown by any method that is not supposed to be used in a hotpath, such as constructors. Use appropriate types.
+* Exceptions can be thrown by any method that is not supposed to be used in a hotpath, such as constructors. Use appropriate exception types.
 * Methods that are named `Try*()` should never throw any exceptions. Instead they return a `boolean` indicating success and any returned value using `out` keyword.
 * Avoid using partial classes
