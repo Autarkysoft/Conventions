@@ -24,8 +24,8 @@ public int Foo
 }
 ```
 #### Test names
-Details below. Example: `Encode_ArgumentExceptionTest()` or `Encode_ArgumentException_Test()` but NOT `Encode_Test()`
-for testing a method called `Encode`.
+For example to test a method called `Encode` use `Encode_ArgumentExceptionTest()` or `Encode_ArgumentException_Test()` but NOT `Encode_Test()`.
+More details in _Naming tests_ section. 
 
 ## Naming tests
 * Test class should use the same name as the class/struct it is testing with the plural word `Tests` added to the end.
@@ -47,9 +47,12 @@ namespace Tests.Encoders
 {
   public class Base58Tests
   {
-     public string EncodeTest(){...}
-     public string Encode_EmptyBytesTest(){...}
-     public string Encode_ExceptionTest(){...}
+     [Fact]
+     public void EncodeTest(){...}
+     [Fact]
+     public void Encode_EmptyBytesTest(){...}
+     [Fact]
+     public void Encode_ExceptionTest(){...}
   }
 }
 ```
